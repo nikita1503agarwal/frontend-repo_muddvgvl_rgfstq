@@ -9,16 +9,16 @@ const suggestions = [
 ]
 
 export default function About() {
-  const [lines, setLines] = useState<string[]>(['Type "help" to begin.'])
+  const [lines, setLines] = useState(['Type "help" to begin.'])
   const [input, setInput] = useState('')
-  const endRef = useRef<HTMLDivElement | null>(null)
+  const endRef = useRef(null)
 
-  useEffect(() => { endRef.current?.scrollIntoView({ behavior: 'smooth' }) }, [lines])
+  useEffect(() => { endRef.current?.scrollIntoView?.({ behavior: 'smooth' }) }, [lines])
 
-  const handleCommand = (value: string) => {
+  const handleCommand = (value) => {
     const v = value.trim()
     if (!v) return
-    let output: string[] = []
+    let output = []
     switch (true) {
       case v === 'help':
         output = [
@@ -46,7 +46,7 @@ export default function About() {
     setLines(prev => [...prev, `> ${v}`, ...output])
   }
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = (e) => {
     e.preventDefault()
     handleCommand(input)
     setInput('')

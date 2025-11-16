@@ -3,46 +3,13 @@
 > vite
 
 
-  VITE v5.4.20  ready in 217 ms
+  VITE v5.4.20  ready in 232 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.4.239:3000/
-3:29:29 PM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/About.jsx:12:44: ERROR: Unexpected "]"
-3:29:29 PM [vite] Pre-transform error: Transform failed with 1 error:
+3:31:54 PM [vite] Pre-transform error: Transform failed with 1 error:
 /home/workspace/src/components/Skills.jsx:8:37: ERROR: Expected ";" but found "as"
-3:29:29 PM [vite] ✨ new dependencies optimized: lucide-react, framer-motion, @splinetool/react-spline
-3:29:29 PM [vite] ✨ optimized dependencies changed. reloading
-3:29:30 PM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/About.jsx:12:44: ERROR: Unexpected "]"
-3:29:30 PM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/components/Skills.jsx:8:37: ERROR: Expected ";" but found "as"
-The file does not exist at "/home/workspace/node_modules/.vite/deps/chunk-I4MZPW7S.js?v=35394813" which is in the optimize deps directory. The dependency might be incompatible with the dep optimizer. Try adding it to `optimizeDeps.exclude`.
-The file does not exist at "/home/workspace/node_modules/.vite/deps/chunk-XPR23Y44.js?v=35394813" which is in the optimize deps directory. The dependency might be incompatible with the dep optimizer. Try adding it to `optimizeDeps.exclude`.
-3:29:31 PM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/About.jsx:12:44: ERROR: Unexpected "]"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/About.jsx:12:44
-  
-  Unexpected "]"
-  10 |  
-  11 |  export default function About() {
-  12 |    const [lines, setLines] = useState<string[]>(['Type "help" to begin.'])
-     |                                              ^
-  13 |    const [input, setInput] = useState('')
-  14 |    const endRef = useRef<HTMLDivElement | null>(null)
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-3:29:32 PM [vite] Internal server error: Transform failed with 1 error:
+3:31:57 PM [vite] Internal server error: Transform failed with 1 error:
 /home/workspace/src/components/Skills.jsx:8:37: ERROR: Expected ";" but found "as"
   Plugin: vite:esbuild
   File: /home/workspace/src/components/Skills.jsx:8:37
@@ -65,7 +32,7 @@ The file does not exist at "/home/workspace/node_modules/.vite/deps/chunk-XPR23Y
       at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
       at Readable.push (node:internal/streams/readable:390:5)
       at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-3:29:54 PM [vite] Internal server error: Transform failed with 1 error:
+3:32:03 PM [vite] Internal server error: Transform failed with 1 error:
 /home/workspace/src/components/Skills.jsx:8:37: ERROR: Expected ";" but found "as"
   Plugin: vite:esbuild
   File: /home/workspace/src/components/Skills.jsx:8:37
@@ -77,29 +44,6 @@ The file does not exist at "/home/workspace/node_modules/.vite/deps/chunk-XPR23Y
      |                                       ^
   9  |      if (!canvas) return
   10 |      const ctx = canvas.getContext('2d')!
-  
-      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
-      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
-      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
-      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
-      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
-      at Socket.emit (node:events:508:28)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
-      at Readable.push (node:internal/streams/readable:390:5)
-      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-3:29:54 PM [vite] Internal server error: Transform failed with 1 error:
-/home/workspace/src/components/About.jsx:12:44: ERROR: Unexpected "]"
-  Plugin: vite:esbuild
-  File: /home/workspace/src/components/About.jsx:12:44
-  
-  Unexpected "]"
-  10 |  
-  11 |  export default function About() {
-  12 |    const [lines, setLines] = useState<string[]>(['Type "help" to begin.'])
-     |                                              ^
-  13 |    const [input, setInput] = useState('')
-  14 |    const endRef = useRef<HTMLDivElement | null>(null)
   
       at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
       at /home/workspace/node_modules/esbuild/lib/main.js:755:50
