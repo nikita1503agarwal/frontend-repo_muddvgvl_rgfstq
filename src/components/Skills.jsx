@@ -5,9 +5,11 @@ export default function Skills() {
   const canvasRef = useRef(null)
 
   useEffect(() => {
-    const canvas = canvasRef.current as HTMLCanvasElement | null
+    const canvas = canvasRef.current
     if (!canvas) return
-    const ctx = canvas.getContext('2d')!
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+
     const dpr = window.devicePixelRatio || 1
     const size = 260
     canvas.width = size * dpr
